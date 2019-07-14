@@ -85,7 +85,7 @@ function drawQrcode (options) {
       ctx.drawImage(options.image.imageResource, options.image.dx, options.image.dy, options.image.dWidth, options.image.dHeight)
     }
 
-    ctx.draw(false, function (e) {
+    ctx.draw(true, function (e) {
       options.callback && options.callback(e)
     })
   }
